@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CustomCollectionViewCell" customModule="ShopNow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="118"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CsR-h1-eHp">
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="118"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="fUH-Ad-id2">
+                                <rect key="frame" x="0.0" y="0.0" width="357" height="118"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rj8-Po-3Ma">
+                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="118"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gk3-Jf-Eai">
+                                        <rect key="frame" x="89.5" y="0.0" width="88.5" height="118"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dfq-zQ-cKO">
+                                        <rect key="frame" x="179" y="0.0" width="88.5" height="118"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GDN-Rf-FY6">
+                                        <rect key="frame" x="268.5" y="0.0" width="88.5" height="118"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fUH-Ad-id2" secondAttribute="bottom" id="GvF-DA-rs5"/>
+                            <constraint firstItem="fUH-Ad-id2" firstAttribute="leading" secondItem="CsR-h1-eHp" secondAttribute="leading" id="WUn-BP-TZ6"/>
+                            <constraint firstAttribute="trailing" secondItem="fUH-Ad-id2" secondAttribute="trailing" id="Xxv-bC-a9V"/>
+                            <constraint firstItem="fUH-Ad-id2" firstAttribute="top" secondItem="CsR-h1-eHp" secondAttribute="top" id="lBi-O0-K9G"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="CsR-h1-eHp" secondAttribute="bottom" id="1Ft-YV-kBa"/>
+                <constraint firstItem="CsR-h1-eHp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="23W-l8-DcL"/>
+                <constraint firstItem="CsR-h1-eHp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DZV-Cg-cXc"/>
+                <constraint firstAttribute="trailing" secondItem="CsR-h1-eHp" secondAttribute="trailing" id="yhM-CX-9YM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="357" height="118"/>
+            <connections>
+                <outlet property="collectImg" destination="GDN-Rf-FY6" id="n33-hF-3MH"/>
+                <outlet property="couponImg" destination="rj8-Po-3Ma" id="zMS-Wd-OUx"/>
+                <outlet property="groupImg" destination="Dfq-zQ-cKO" id="lsF-Rl-eSH"/>
+                <outlet property="seckillImg" destination="gk3-Jf-Eai" id="09n-dl-CRn"/>
+            </connections>
+            <point key="canvasLocation" x="-173" y="-106"/>
+        </collectionViewCell>
+    </objects>
+</document>

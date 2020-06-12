@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShopNow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-190" y="115"/>
+        </scene>
+        <!--Cart View Controller-->
+        <scene sceneID="r93-RO-515">
+            <objects>
+                <viewController storyboardIdentifier="CartViewController" id="OLF-c2-9ex" customClass="CartViewController" customModule="ShopNow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gN5-gE-XL6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1cS-id-mvy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="768"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总计" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usA-Zo-wRW">
+                                <rect key="frame" x="10" y="812" width="404" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1cS-id-mvy" firstAttribute="top" secondItem="Ia9-ai-XCk" secondAttribute="top" id="0JD-yW-ri5"/>
+                            <constraint firstItem="usA-Zo-wRW" firstAttribute="leading" secondItem="Ia9-ai-XCk" secondAttribute="leading" constant="10" id="AES-V8-T54"/>
+                            <constraint firstItem="usA-Zo-wRW" firstAttribute="top" secondItem="1cS-id-mvy" secondAttribute="bottom" id="CPL-uh-PRk"/>
+                            <constraint firstItem="usA-Zo-wRW" firstAttribute="bottom" secondItem="Ia9-ai-XCk" secondAttribute="bottom" id="Y2U-va-icI"/>
+                            <constraint firstItem="Ia9-ai-XCk" firstAttribute="bottom" secondItem="1cS-id-mvy" secondAttribute="bottom" constant="50" id="bPa-vP-ORn"/>
+                            <constraint firstItem="1cS-id-mvy" firstAttribute="leading" secondItem="Ia9-ai-XCk" secondAttribute="leading" id="fmP-xS-XJE"/>
+                            <constraint firstItem="Ia9-ai-XCk" firstAttribute="trailing" secondItem="1cS-id-mvy" secondAttribute="trailing" id="rgo-ua-2a7"/>
+                            <constraint firstItem="Ia9-ai-XCk" firstAttribute="trailing" secondItem="usA-Zo-wRW" secondAttribute="trailing" id="vgl-u7-5hF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ia9-ai-XCk"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="1cS-id-mvy" id="7FO-CZ-wbs"/>
+                        <outlet property="titleLab" destination="usA-Zo-wRW" id="anp-5A-YS2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UDm-cQ-kZ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636.23188405797111" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+</document>
